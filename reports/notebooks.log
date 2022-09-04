@@ -22,7 +22,7 @@ st.mode(dataa['Jumlah Total'])
 
 [0;31m[0m
 [0;31mStatisticsError[0mTraceback (most recent call last)
-[0;32m<ipython-input-7-f5dd61466d1e>[0m in [0;36m<module>[0;34m[0m
+[0;32m<ipython-input-9-f5dd61466d1e>[0m in [0;36m<module>[0;34m[0m
 [0;32m----> 1[0;31m [0mst[0m[0;34m.[0m[0mmode[0m[0;34m([0m[0mdataa[0m[0;34m[[0m[0;34m'Jumlah Total'[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [0m
 [0;32m/usr/lib/python3.7/statistics.py[0m in [0;36mmode[0;34m(data)[0m
