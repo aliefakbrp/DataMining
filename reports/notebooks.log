@@ -17,14 +17,21 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-st.median(dataa['Jumlah Total'])
+st.mode(dataa['Jumlah Total'])
 ------------------
 
 [0;31m[0m
-[0;31mNameError[0mTraceback (most recent call last)
-[0;32m<ipython-input-5-f2d56f3be48f>[0m in [0;36m<module>[0;34m[0m
-[0;32m----> 1[0;31m [0mst[0m[0;34m.[0m[0mmedian[0m[0;34m([0m[0mdataa[0m[0;34m[[0m[0;34m'Jumlah Total'[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;31mStatisticsError[0mTraceback (most recent call last)
+[0;32m<ipython-input-7-f5dd61466d1e>[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0mst[0m[0;34m.[0m[0mmode[0m[0;34m([0m[0mdataa[0m[0;34m[[0m[0;34m'Jumlah Total'[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [0m
-[0;31mNameError[0m: name 'st' is not defined
-NameError: name 'st' is not defined
+[0;32m/usr/lib/python3.7/statistics.py[0m in [0;36mmode[0;34m(data)[0m
+[1;32m    504[0m     [0;32melif[0m [0mtable[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    505[0m         raise StatisticsError(
+[0;32m--> 506[0;31m                 [0;34m'no unique mode; found %d equally common values'[0m [0;34m%[0m [0mlen[0m[0;34m([0m[0mtable[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    507[0m                 )
+[1;32m    508[0m     [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mStatisticsError[0m: no unique mode; found 12 equally common values
+StatisticsError: no unique mode; found 12 equally common values
 

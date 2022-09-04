@@ -188,19 +188,19 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/notebooks.ipynb"
+        <a href="(https://colab.research.google.com)/github/executablebooks/jupyter-book/blob/master/docs/notebooks.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
-title="Launch on Binder"
+title="Launch on Colab"
 >
   
 
 <span class="headerbtn__icon-container">
   
-    <img src="_static/images/logo_binder.svg">
+    <img src="_static/images/logo_colab.png">
   </span>
-<span class="headerbtn__text-container">Binder</span>
+<span class="headerbtn__text-container">Colab</span>
 </a>
 
       </li>
@@ -433,6 +433,8 @@ title="Print to PDF"
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">st</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
 </div>
 </div>
@@ -459,7 +461,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-ce424842-f374-4f4b-9dd7-7a990cb30860">
+  <div id="df-bdb45c98-2225-4564-8e74-3b86ee344ba9">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -599,7 +601,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-ce424842-f374-4f4b-9dd7-7a990cb30860')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-bdb45c98-2225-4564-8e74-3b86ee344ba9')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -650,12 +652,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-ce424842-f374-4f4b-9dd7-7a990cb30860 button.colab-df-convert');
+          document.querySelector('#df-bdb45c98-2225-4564-8e74-3b86ee344ba9 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-ce424842-f374-4f4b-9dd7-7a990cb30860');
+          const element = document.querySelector('#df-bdb45c98-2225-4564-8e74-3b86ee344ba9');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -686,11 +688,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">NameError</span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">5</span><span class="o">-</span><span class="n">f2d56f3be48f</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">st</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">dataa</span><span class="p">[</span><span class="s1">&#39;Jumlah Total&#39;</span><span class="p">])</span>
-
-<span class="ne">NameError</span>: name &#39;st&#39; is not defined
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1662.0
 </pre></div>
 </div>
 </div>
@@ -720,9 +718,8 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">StatisticsError</span><span class="g g-Whitespace">                           </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">55</span><span class="o">-</span><span class="n">f5dd61466d1e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">StatisticsError</span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">7</span><span class="o">-</span><span class="n">f5dd61466d1e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">st</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">dataa</span><span class="p">[</span><span class="s1">&#39;Jumlah Total&#39;</span><span class="p">])</span>
 
 <span class="nn">/usr/lib/python3.7/statistics.py</span> in <span class="ni">mode</span><span class="nt">(data)</span>
@@ -743,24 +740,12 @@ title="Print to PDF"
 <h2>Kuartil<a class="headerlink" href="#kuartil" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataa</span><span class="o">.</span><span class="n">quartile</span><span class="p">(</span><span class="n">dataa</span><span class="p">[</span><span class="s1">&#39;Jumlah Total&#39;</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">dataa</span><span class="p">[</span><span class="s1">&#39;Jumlah Total&#39;</span><span class="p">],</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">60</span><span class="o">-</span><span class="mi">461</span><span class="n">faf7fcecb</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">dataa</span><span class="o">.</span><span class="n">quartile</span><span class="p">(</span><span class="n">dataa</span><span class="p">[</span><span class="s1">&#39;Jumlah Total&#39;</span><span class="p">])</span>
-
-<span class="nn">/usr/local/lib/python3.7/dist-packages/pandas/core/generic.py</span> in <span class="ni">__getattr__</span><span class="nt">(self, name)</span>
-<span class="g g-Whitespace">   </span><span class="mi">5485</span>         <span class="p">):</span>
-<span class="g g-Whitespace">   </span><span class="mi">5486</span>             <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
-<span class="ne">-&gt; </span><span class="mi">5487</span>         <span class="k">return</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">5488</span> 
-<span class="g g-Whitespace">   </span><span class="mi">5489</span>     <span class="k">def</span> <span class="fm">__setattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-
-<span class="ne">AttributeError</span>: &#39;DataFrame&#39; object has no attribute &#39;quartile&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1662.0
 </pre></div>
 </div>
 </div>
@@ -775,13 +760,6 @@ title="Print to PDF"
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
-  warnings.warn(msg, FutureWarning)
-</pre></div>
-</div>
-<img alt="_images/notebooks_16_1.png" src="_images/notebooks_16_1.png" />
 </div>
 </div>
 </section>
