@@ -1,0 +1,46 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/jupyter_cache/executors/utils.py", line 56, in single_nb_execution
+    record_timing=False,
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 587, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 664, in async_execute
+    cell, index, execution_count=self.code_cells_executed + 1
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+labels1 = ['sempit', 'sedang', 'lebar']
+LabelledBinning1 = pd.qcut(df2['petal.length'],len(labels1), True, labels1).value_counts()
+------------------
+
+[0;31m[0m
+[0;31mValueError[0mTraceback (most recent call last)
+[0;32m<ipython-input-10-d6e5137d8aab>[0m in [0;36m<module>[0;34m[0m
+[1;32m      1[0m [0mlabels1[0m [0;34m=[0m [0;34m[[0m[0;34m'sempit'[0m[0;34m,[0m [0;34m'sedang'[0m[0;34m,[0m [0;34m'lebar'[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 2[0;31m [0mLabelledBinning1[0m [0;34m=[0m [0mpd[0m[0;34m.[0m[0mqcut[0m[0;34m([0m[0mdf2[0m[0;34m[[0m[0;34m'petal.length'[0m[0;34m][0m[0;34m,[0m[0mlen[0m[0;34m([0m[0mlabels1[0m[0;34m)[0m[0;34m,[0m [0;32mTrue[0m[0;34m,[0m [0mlabels1[0m[0;34m)[0m[0;34m.[0m[0mvalue_counts[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m
+[0;32m/usr/local/lib/python3.7/dist-packages/pandas/core/reshape/tile.py[0m in [0;36mqcut[0;34m(x, q, labels, retbins, precision, duplicates)[0m
+[1;32m    377[0m         [0minclude_lowest[0m[0;34m=[0m[0;32mTrue[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    378[0m         [0mdtype[0m[0;34m=[0m[0mdtype[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 379[0;31m         [0mduplicates[0m[0;34m=[0m[0mduplicates[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    380[0m     )
+[1;32m    381[0m [0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.7/dist-packages/pandas/core/reshape/tile.py[0m in [0;36m_bins_to_cuts[0;34m(x, bins, right, labels, precision, include_lowest, dtype, duplicates, ordered)[0m
+[1;32m    430[0m         [0;32mif[0m [0;32mnot[0m [0;34m([0m[0mlabels[0m [0;32mis[0m [0;32mNone[0m [0;32mor[0m [0mis_list_like[0m[0;34m([0m[0mlabels[0m[0;34m)[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    431[0m             raise ValueError(
+[0;32m--> 432[0;31m                 [0;34m"Bin labels must either be False, None or passed in as a "[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    433[0m                 [0;34m"list-like argument"[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    434[0m             )
+
+[0;31mValueError[0m: Bin labels must either be False, None or passed in as a list-like argument
+ValueError: Bin labels must either be False, None or passed in as a list-like argument
+
