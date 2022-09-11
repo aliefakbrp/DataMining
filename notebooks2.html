@@ -50,6 +50,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Tugas 1" href="notebooks.html" />
@@ -360,8 +362,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#equal-width">
-     Equal Width
+    <a class="reference internal nav-link" href="#data-equal-width">
+     Data Equal Width
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
@@ -379,12 +381,39 @@ title="Print to PDF"
        Data Petal Length
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#petal-width">
+       Petal Width
+      </a>
+     </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#petal-width">
-     Petal Width
+    <a class="reference internal nav-link" href="#data-equal-frequency">
+     Data Equal Frequency
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Data Sepal Length
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Data Sepal Width
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Data Petal Length
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#data-petal-width">
+       Data Petal Width
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -392,13 +421,6 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#lakukan-proses-diskritisasi-dengan-basis-entropy">
    2. Lakukan proses diskritisasi dengan basis entropy
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-equal-frequency">
-     Data Equal Frequency
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -445,8 +467,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#equal-width">
-     Equal Width
+    <a class="reference internal nav-link" href="#data-equal-width">
+     Data Equal Width
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
@@ -464,12 +486,39 @@ title="Print to PDF"
        Data Petal Length
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#petal-width">
+       Petal Width
+      </a>
+     </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#petal-width">
-     Petal Width
+    <a class="reference internal nav-link" href="#data-equal-frequency">
+     Data Equal Frequency
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Data Sepal Length
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Data Sepal Width
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Data Petal Length
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#data-petal-width">
+       Data Petal Width
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -477,13 +526,6 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#lakukan-proses-diskritisasi-dengan-basis-entropy">
    2. Lakukan proses diskritisasi dengan basis entropy
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-equal-frequency">
-     Data Equal Frequency
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -539,7 +581,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-829a0c46-c614-47d3-9b9f-519f05a96918">
+  <div id="df-80e54b4d-5564-4306-8188-18a9c05f8765">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -659,7 +701,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-829a0c46-c614-47d3-9b9f-519f05a96918')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-80e54b4d-5564-4306-8188-18a9c05f8765')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -710,12 +752,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-829a0c46-c614-47d3-9b9f-519f05a96918 button.colab-df-convert');
+          document.querySelector('#df-80e54b4d-5564-4306-8188-18a9c05f8765 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-829a0c46-c614-47d3-9b9f-519f05a96918');
+          const element = document.querySelector('#df-80e54b4d-5564-4306-8188-18a9c05f8765');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -833,31 +875,7 @@ Name: petal.length, Length: 150, dtype: float64
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">labels1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sempit&#39;</span><span class="p">,</span> <span class="s1">&#39;sedang&#39;</span><span class="p">,</span> <span class="s1">&#39;lebar&#39;</span><span class="p">]</span>
-<span class="n">LabelledBinning1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;petal.length&#39;</span><span class="p">],</span><span class="nb">len</span><span class="p">(</span><span class="n">labels1</span><span class="p">),</span> <span class="kc">True</span><span class="p">,</span> <span class="n">labels1</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">ValueError</span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="n">d6e5137d8aab</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">labels1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sempit&#39;</span><span class="p">,</span> <span class="s1">&#39;sedang&#39;</span><span class="p">,</span> <span class="s1">&#39;lebar&#39;</span><span class="p">]</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">LabelledBinning1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;petal.length&#39;</span><span class="p">],</span><span class="nb">len</span><span class="p">(</span><span class="n">labels1</span><span class="p">),</span> <span class="kc">True</span><span class="p">,</span> <span class="n">labels1</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-
-<span class="nn">/usr/local/lib/python3.7/dist-packages/pandas/core/reshape/tile.py</span> in <span class="ni">qcut</span><span class="nt">(x, q, labels, retbins, precision, duplicates)</span>
-<span class="g g-Whitespace">    </span><span class="mi">377</span>         <span class="n">include_lowest</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">378</span>         <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span>
-<span class="ne">--&gt; </span><span class="mi">379</span>         <span class="n">duplicates</span><span class="o">=</span><span class="n">duplicates</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">380</span>     <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">381</span> 
-
-<span class="nn">/usr/local/lib/python3.7/dist-packages/pandas/core/reshape/tile.py</span> in <span class="ni">_bins_to_cuts</span><span class="nt">(x, bins, right, labels, precision, include_lowest, dtype, duplicates, ordered)</span>
-<span class="g g-Whitespace">    </span><span class="mi">430</span>         <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">labels</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">is_list_like</span><span class="p">(</span><span class="n">labels</span><span class="p">)):</span>
-<span class="g g-Whitespace">    </span><span class="mi">431</span>             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-<span class="ne">--&gt; </span><span class="mi">432</span>                 <span class="s2">&quot;Bin labels must either be False, None or passed in as a &quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">433</span>                 <span class="s2">&quot;list-like argument&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">434</span>             <span class="p">)</span>
-
-<span class="ne">ValueError</span>: Bin labels must either be False, None or passed in as a list-like argument
+<span class="c1"># LabelledBinning1 = pd.qcut(df2[&#39;petal.length&#39;],len(labels1), True, labels1).value_counts()</span>
 </pre></div>
 </div>
 </div>
@@ -878,10 +896,26 @@ Name: petal.length, Length: 150, dtype: float64
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      0.2
+1      0.2
+2      0.2
+3      0.2
+4      0.2
+      ... 
+145    2.3
+146    1.9
+147    2.0
+148    2.3
+149    1.8
+Name: petal.width, Length: 150, dtype: float64
+</pre></div>
+</div>
+</div>
 </div>
 </section>
-<section id="equal-width">
-<h3>Equal Width<a class="headerlink" href="#equal-width" title="Permalink to this headline">#</a></h3>
+<section id="data-equal-width">
+<h3>Data Equal Width<a class="headerlink" href="#data-equal-width" title="Permalink to this headline">#</a></h3>
 <section id="data-sepal-length">
 <h4>Data Sepal Length<a class="headerlink" href="#data-sepal-length" title="Permalink to this headline">#</a></h4>
 <div class="cell docutils container">
@@ -917,7 +951,7 @@ Name: sepal.length, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8d78d748-5243-4ea9-b86a-da5c99c0bbc3">
+  <div id="df-53319be6-6067-4c25-976a-970796f39917">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1020,7 +1054,7 @@ Name: sepal.length, dtype: int64
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8d78d748-5243-4ea9-b86a-da5c99c0bbc3')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-53319be6-6067-4c25-976a-970796f39917')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1071,12 +1105,12 @@ Name: sepal.length, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-8d78d748-5243-4ea9-b86a-da5c99c0bbc3 button.colab-df-convert');
+          document.querySelector('#df-53319be6-6067-4c25-976a-970796f39917 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8d78d748-5243-4ea9-b86a-da5c99c0bbc3');
+          const element = document.querySelector('#df-53319be6-6067-4c25-976a-970796f39917');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1148,7 +1182,7 @@ Name: sepal.width, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e8c6f555-ab26-4093-8e2e-f383154efab2">
+  <div id="df-4b0140c7-6723-4650-b2a9-29dadcfabbb1">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1251,7 +1285,7 @@ Name: sepal.width, dtype: int64
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e8c6f555-ab26-4093-8e2e-f383154efab2')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-4b0140c7-6723-4650-b2a9-29dadcfabbb1')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1302,12 +1336,12 @@ Name: sepal.width, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e8c6f555-ab26-4093-8e2e-f383154efab2 button.colab-df-convert');
+          document.querySelector('#df-4b0140c7-6723-4650-b2a9-29dadcfabbb1 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e8c6f555-ab26-4093-8e2e-f383154efab2');
+          const element = document.querySelector('#df-4b0140c7-6723-4650-b2a9-29dadcfabbb1');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1364,7 +1398,7 @@ Name: petal.length, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-36b0fa54-9ebb-4495-aa39-d22be875eca4">
+  <div id="df-7da514c6-34c6-4ead-a9ac-bf00c0e6fd46">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1448,7 +1482,7 @@ Name: petal.length, dtype: int64
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-36b0fa54-9ebb-4495-aa39-d22be875eca4')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7da514c6-34c6-4ead-a9ac-bf00c0e6fd46')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1499,12 +1533,12 @@ Name: petal.length, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-36b0fa54-9ebb-4495-aa39-d22be875eca4 button.colab-df-convert');
+          document.querySelector('#df-7da514c6-34c6-4ead-a9ac-bf00c0e6fd46 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-36b0fa54-9ebb-4495-aa39-d22be875eca4');
+          const element = document.querySelector('#df-7da514c6-34c6-4ead-a9ac-bf00c0e6fd46');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1526,9 +1560,8 @@ Name: petal.length, dtype: int64
 </div></div>
 </div>
 </section>
-</section>
 <section id="petal-width">
-<h3>Petal Width<a class="headerlink" href="#petal-width" title="Permalink to this headline">#</a></h3>
+<h4>Petal Width<a class="headerlink" href="#petal-width" title="Permalink to this headline">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Petal_Width_Binning</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;petal.width&#39;</span><span class="p">],</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">),</span> <span class="kc">True</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
@@ -1562,7 +1595,7 @@ Name: petal.width, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-774a878e-2e21-4d57-88fc-ff7a8408dbab">
+  <div id="df-1bf45662-23f6-4eff-bbf2-37f462b10d59">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1646,7 +1679,7 @@ Name: petal.width, dtype: int64
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-774a878e-2e21-4d57-88fc-ff7a8408dbab')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1bf45662-23f6-4eff-bbf2-37f462b10d59')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1697,12 +1730,12 @@ Name: petal.width, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-774a878e-2e21-4d57-88fc-ff7a8408dbab button.colab-df-convert');
+          document.querySelector('#df-1bf45662-23f6-4eff-bbf2-37f462b10d59 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-774a878e-2e21-4d57-88fc-ff7a8408dbab');
+          const element = document.querySelector('#df-1bf45662-23f6-4eff-bbf2-37f462b10d59');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1725,12 +1758,875 @@ Name: petal.width, dtype: int64
 </div>
 </section>
 </section>
+<section id="data-equal-frequency">
+<h3>Data Equal Frequency<a class="headerlink" href="#data-equal-frequency" title="Permalink to this headline">#</a></h3>
+<section id="id1">
+<h4>Data Sepal Length<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Qcut_Sepal_Length_Binning</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">],</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">),</span> <span class="n">labels</span><span class="p">)</span>
+<span class="n">Labelled_Qcut_Sepal_Length_Binning</span> <span class="o">=</span> <span class="n">Qcut_Sepal_Length_Binning</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">NoLabelled_Qcut_Sepal_Length_Binning</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">],</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">))</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="c1"># IntervalBinning = pd.qcut()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Labelled_Qcut_Sepal_Length_Binning</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang    56
+sempit    52
+lebar     42
+Name: sepal.length, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">((</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">],</span><span class="n">Qcut_Sepal_Length_Binning</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-cb619a9e-3800-4285-9d46-96a82aca7d3a">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sepal.length</th>
+      <th>sepal.length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5.1</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4.9</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4.7</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4.6</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5.0</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>6.7</td>
+      <td>lebar</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>6.3</td>
+      <td>sedang</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>6.5</td>
+      <td>lebar</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>6.2</td>
+      <td>sedang</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>5.9</td>
+      <td>sedang</td>
+    </tr>
+  </tbody>
+</table>
+<p>150 rows × 2 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-cb619a9e-3800-4285-9d46-96a82aca7d3a')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-cb619a9e-3800-4285-9d46-96a82aca7d3a button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-cb619a9e-3800-4285-9d46-96a82aca7d3a');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+<section id="id2">
+<h4>Data Sepal Width<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Qcut_Sepal_Width_Binning</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;sepal.width&#39;</span><span class="p">],</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">),</span> <span class="n">labels</span><span class="p">)</span>
+<span class="n">Labelled_Qcut_Sepal_Width_Binning</span> <span class="o">=</span> <span class="n">Qcut_Sepal_Width_Binning</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">NoLabelled_Qcut_Sepal_Width_Binning</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;sepal.width&#39;</span><span class="p">],</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">))</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="c1"># IntervalBinning = pd.qcut()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Labelled_Qcut_Sepal_Width_Binning</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sempit    57
+sedang    50
+lebar     43
+Name: sepal.width, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">((</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;sepal.width&#39;</span><span class="p">],</span><span class="n">Qcut_Sepal_Width_Binning</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-ef9fde0f-4098-44fe-bfe9-3f9bd1ed7b19">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sepal.width</th>
+      <th>sepal.width</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3.5</td>
+      <td>lebar</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3.0</td>
+      <td>sedang</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3.2</td>
+      <td>sedang</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3.1</td>
+      <td>sedang</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>3.6</td>
+      <td>lebar</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>3.0</td>
+      <td>sedang</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>2.5</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>3.0</td>
+      <td>sedang</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>3.4</td>
+      <td>lebar</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>3.0</td>
+      <td>sedang</td>
+    </tr>
+  </tbody>
+</table>
+<p>150 rows × 2 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ef9fde0f-4098-44fe-bfe9-3f9bd1ed7b19')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-ef9fde0f-4098-44fe-bfe9-3f9bd1ed7b19 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-ef9fde0f-4098-44fe-bfe9-3f9bd1ed7b19');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+<section id="id3">
+<h4>Data Petal Length<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Qcut_Petal_Length_Binning</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;petal.length&#39;</span><span class="p">],</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">),</span> <span class="n">labels</span><span class="p">)</span>
+<span class="n">Labelled_Qcut_Petal_Length_Binning</span> <span class="o">=</span> <span class="n">Qcut_Petal_Length_Binning</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">NoLabelled_Qcut_Petal_Length_Binning</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;petal.length&#39;</span><span class="p">],</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">))</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="c1"># IntervalBinning = pd.qcut()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Labelled_Qcut_Petal_Length_Binning</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang    54
+sempit    50
+lebar     46
+Name: petal.length, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">((</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;petal.length&#39;</span><span class="p">],</span><span class="n">Qcut_Petal_Length_Binning</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-6ea41d8a-78f3-4f7e-9dee-e69c0889f570">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>petal.length</th>
+      <th>petal.length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.4</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.4</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1.3</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.5</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1.4</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>5.2</td>
+      <td>lebar</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>5.0</td>
+      <td>lebar</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>5.2</td>
+      <td>lebar</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>5.4</td>
+      <td>lebar</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>5.1</td>
+      <td>lebar</td>
+    </tr>
+  </tbody>
+</table>
+<p>150 rows × 2 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-6ea41d8a-78f3-4f7e-9dee-e69c0889f570')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-6ea41d8a-78f3-4f7e-9dee-e69c0889f570 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-6ea41d8a-78f3-4f7e-9dee-e69c0889f570');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+<section id="data-petal-width">
+<h4>Data Petal Width<a class="headerlink" href="#data-petal-width" title="Permalink to this headline">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Qcut_Petal_Width_Binning</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;petal.width&#39;</span><span class="p">],</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">),</span> <span class="n">labels</span><span class="p">)</span>
+<span class="n">Labelled_Qcut_Petal_Width_Binning</span> <span class="o">=</span> <span class="n">Qcut_Petal_Width_Binning</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">NoLabelled_Qcut_Petal_Width_Binning</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;petal.width&#39;</span><span class="p">],</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">))</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="c1"># IntervalBinning = pd.qcut()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Labelled_Qcut_Petal_Width_Binning</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang    52
+sempit    50
+lebar     48
+Name: petal.width, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">((</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;petal.width&#39;</span><span class="p">],</span><span class="n">Qcut_Petal_Width_Binning</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-955c4ecd-551f-4de8-a8ef-b6f97f27d847">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>petal.width</th>
+      <th>petal.width</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.2</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.2</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.2</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.2</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.2</td>
+      <td>sempit</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>2.3</td>
+      <td>lebar</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>1.9</td>
+      <td>lebar</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>2.0</td>
+      <td>lebar</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>2.3</td>
+      <td>lebar</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>1.8</td>
+      <td>lebar</td>
+    </tr>
+  </tbody>
+</table>
+<p>150 rows × 2 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-955c4ecd-551f-4de8-a8ef-b6f97f27d847')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-955c4ecd-551f-4de8-a8ef-b6f97f27d847 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-955c4ecd-551f-4de8-a8ef-b6f97f27d847');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+</section>
+</section>
 <section id="lakukan-proses-diskritisasi-dengan-basis-entropy">
 <h2>2. Lakukan proses diskritisasi dengan basis entropy<a class="headerlink" href="#lakukan-proses-diskritisasi-dengan-basis-entropy" title="Permalink to this headline">#</a></h2>
 <p>![image.png](data:image/png;base64,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)</p>
-<section id="data-equal-frequency">
-<h3>Data Equal Frequency<a class="headerlink" href="#data-equal-frequency" title="Permalink to this headline">#</a></h3>
-</section>
+<p><span class="math notranslate nohighlight">\(thisisinline\int math\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataEntropy</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;sepal.length&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">entropy</span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">log</span><span class="p">,</span> <span class="n">e</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="kn">import</span> <span class="nn">timeit</span>
+
+<span class="k">def</span> <span class="nf">entropy1</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">base</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+  <span class="n">value</span><span class="p">,</span><span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">entropy</span><span class="p">(</span><span class="n">counts</span><span class="p">,</span> <span class="n">base</span><span class="o">=</span><span class="n">base</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">entropy2</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">base</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot; Computes entropy of label distribution. &quot;&quot;&quot;</span>
+
+  <span class="n">n_labels</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+
+  <span class="k">if</span> <span class="n">n_labels</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">return</span> <span class="mi">0</span>
+
+  <span class="n">value</span><span class="p">,</span><span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">probs</span> <span class="o">=</span> <span class="n">counts</span> <span class="o">/</span> <span class="n">n_labels</span>
+  <span class="n">n_classes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">count_nonzero</span><span class="p">(</span><span class="n">probs</span><span class="p">)</span>
+
+  <span class="k">if</span> <span class="n">n_classes</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">return</span> <span class="mi">0</span>
+
+  <span class="n">ent</span> <span class="o">=</span> <span class="mf">0.</span>
+
+  <span class="c1"># Compute entropy</span>
+  <span class="n">base</span> <span class="o">=</span> <span class="n">e</span> <span class="k">if</span> <span class="n">base</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">base</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">probs</span><span class="p">:</span>
+    <span class="n">ent</span> <span class="o">-=</span> <span class="n">i</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">base</span><span class="p">)</span>
+
+  <span class="k">return</span> <span class="n">ent</span>
+
+<span class="k">def</span> <span class="nf">entropy3</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">base</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+  <span class="n">vc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+  <span class="n">base</span> <span class="o">=</span> <span class="n">e</span> <span class="k">if</span> <span class="n">base</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">base</span>
+  <span class="k">return</span> <span class="o">-</span><span class="p">(</span><span class="n">vc</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">vc</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">base</span><span class="p">))</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">entropy4</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">base</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+  <span class="n">value</span><span class="p">,</span><span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">norm_counts</span> <span class="o">=</span> <span class="n">counts</span> <span class="o">/</span> <span class="n">counts</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+  <span class="n">base</span> <span class="o">=</span> <span class="n">e</span> <span class="k">if</span> <span class="n">base</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">base</span>
+  <span class="k">return</span> <span class="o">-</span><span class="p">(</span><span class="n">norm_counts</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">norm_counts</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">base</span><span class="p">))</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sempit&#39;</span><span class="p">,</span><span class="s1">&#39;sedang&#39;</span><span class="p">,</span><span class="s1">&#39;lebar&#39;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">entropy1</span><span class="p">(</span><span class="n">labels</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">entropy2</span><span class="p">(</span><span class="n">labels</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">entropy3</span><span class="p">(</span><span class="n">labels</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">entropy4</span><span class="p">(</span><span class="n">labels</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.0986122886681096
+1.0986122886681096
+1.0986122886681096
+1.0986122886681096
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
