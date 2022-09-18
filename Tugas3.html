@@ -416,10 +416,10 @@ title="Print to PDF"
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Requirement already satisfied: sklearn in /usr/local/lib/python3.7/dist-packages (0.0)
 Requirement already satisfied: scikit-learn in /usr/local/lib/python3.7/dist-packages (from sklearn) (1.0.2)
-Requirement already satisfied: scipy&gt;=1.1.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (1.7.3)
-Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (3.1.0)
 Requirement already satisfied: numpy&gt;=1.14.6 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (1.21.6)
 Requirement already satisfied: joblib&gt;=0.11 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (1.1.0)
+Requirement already satisfied: scipy&gt;=1.1.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (1.7.3)
+Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (3.1.0)
 </pre></div>
 </div>
 </div>
@@ -449,7 +449,7 @@ Requirement already satisfied: joblib&gt;=0.11 in /usr/local/lib/python3.7/dist-
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-096f4f9f-ae14-4577-a1a5-085a7e86e4d5">
+  <div id="df-ef51123b-93b6-4d17-9441-6dfa30bdf719">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -569,7 +569,7 @@ Requirement already satisfied: joblib&gt;=0.11 in /usr/local/lib/python3.7/dist-
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-096f4f9f-ae14-4577-a1a5-085a7e86e4d5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ef51123b-93b6-4d17-9441-6dfa30bdf719')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -620,12 +620,12 @@ Requirement already satisfied: joblib&gt;=0.11 in /usr/local/lib/python3.7/dist-
 
       <script>
         const buttonEl =
-          document.querySelector('#df-096f4f9f-ae14-4577-a1a5-085a7e86e4d5 button.colab-df-convert');
+          document.querySelector('#df-ef51123b-93b6-4d17-9441-6dfa30bdf719 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-096f4f9f-ae14-4577-a1a5-085a7e86e4d5');
+          const element = document.querySelector('#df-ef51123b-93b6-4d17-9441-6dfa30bdf719');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -682,7 +682,7 @@ Requirement already satisfied: joblib&gt;=0.11 in /usr/local/lib/python3.7/dist-
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_new</span> <span class="o">=</span> <span class="p">[[</span><span class="mf">5.8</span><span class="p">,</span>	<span class="mf">4.0</span><span class="p">,</span>	<span class="mf">1.2</span><span class="p">,</span>	<span class="mf">0.2</span><span class="p">]]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_new</span> <span class="o">=</span> <span class="p">[[</span><span class="mf">6.3</span><span class="p">,</span>	<span class="mf">2.5</span><span class="p">,</span>	<span class="mf">5.0</span><span class="p">,</span>	<span class="mf">1.9</span><span class="p">]]</span>
 <span class="n">y_predict</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_new</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">y_predict</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -690,7 +690,7 @@ Requirement already satisfied: joblib&gt;=0.11 in /usr/local/lib/python3.7/dist-
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setosa
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Virginica
 </pre></div>
 </div>
 </div>
@@ -724,7 +724,7 @@ Requirement already satisfied: joblib&gt;=0.11 in /usr/local/lib/python3.7/dist-
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[&#39;Setosa&#39;]]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[&#39;Virginica&#39;]]
 </pre></div>
 </div>
 </div>
