@@ -55,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Implementasi KNN" href="Tugas3.html" />
-    <link rel="prev" title="Tugas 1" href="notebooks.html" />
+    <link rel="prev" title="Statistika Deskriptif" href="notebooks.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -111,7 +111,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Data Mining
                 </a>
             </li>
         </ul>
@@ -123,7 +123,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
-   Tugas 1
+   Statistika Deskriptif
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -635,12 +635,30 @@ k &amp;: jumlah \ partisi \ atribut \ A \\
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-Requirement already satisfied: sklearn in /usr/local/lib/python3.7/dist-packages (0.0)
-Requirement already satisfied: scikit-learn in /usr/local/lib/python3.7/dist-packages (from sklearn) (1.0.2)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting sklearn
+  Downloading sklearn-0.0.tar.gz (1.1 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: scikit-learn in /usr/local/lib/python3.7/dist-packages (from sklearn) (1.0.2)
 Requirement already satisfied: numpy&gt;=1.14.6 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (1.21.6)
-Requirement already satisfied: joblib&gt;=0.11 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (1.1.0)
-Requirement already satisfied: scipy&gt;=1.1.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (1.7.3)
 Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (3.1.0)
+Requirement already satisfied: scipy&gt;=1.1.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (1.7.3)
+Requirement already satisfied: joblib&gt;=0.11 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (1.2.0)
+Building wheels for collected packages: sklearn
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for sklearn (setup.py) ... ?25l?25hdone
+  Created wheel for sklearn: filename=sklearn-0.0-py2.py3-none-any.whl size=1310 sha256=ed51e0a94e4e6f7ce2fe6fa7dd681ae553af01e6434afefb797d282ffc14a1ee
+  Stored in directory: /root/.cache/pip/wheels/46/ef/c3/157e41f5ee1372d1be90b09f74f82b10e391eaacca8f22d33e
+Successfully built sklearn
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: sklearn
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed sklearn-0.0
 </pre></div>
 </div>
 </div>
@@ -684,7 +702,7 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f9308261-0a1d-4723-bf24-1175be258420">
+  <div id="df-bf88df61-840f-4f2f-a844-29c925a86440">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -804,7 +822,7 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f9308261-0a1d-4723-bf24-1175be258420')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-bf88df61-840f-4f2f-a844-29c925a86440')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -855,12 +873,12 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f9308261-0a1d-4723-bf24-1175be258420 button.colab-df-convert');
+          document.querySelector('#df-bf88df61-840f-4f2f-a844-29c925a86440 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f9308261-0a1d-4723-bf24-1175be258420');
+          const element = document.querySelector('#df-bf88df61-840f-4f2f-a844-29c925a86440');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -916,7 +934,7 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a7f55b48-7166-49e5-9384-a396c8f4b066">
+  <div id="df-cfb67d0b-af66-431e-b02d-81097eaf63e7">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1024,7 +1042,7 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 </table>
 <p>150 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-a7f55b48-7166-49e5-9384-a396c8f4b066')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-cfb67d0b-af66-431e-b02d-81097eaf63e7')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1075,12 +1093,12 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 
       <script>
         const buttonEl =
-          document.querySelector('#df-a7f55b48-7166-49e5-9384-a396c8f4b066 button.colab-df-convert');
+          document.querySelector('#df-cfb67d0b-af66-431e-b02d-81097eaf63e7 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-a7f55b48-7166-49e5-9384-a396c8f4b066');
+          const element = document.querySelector('#df-cfb67d0b-af66-431e-b02d-81097eaf63e7');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1111,7 +1129,7 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-fcdab0d2-44b4-4ae5-8657-17da0348438d">
+  <div id="df-011be62f-fcc9-45cd-ab45-726c921fe80e">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1279,7 +1297,7 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 </table>
 <p>150 rows × 9 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-fcdab0d2-44b4-4ae5-8657-17da0348438d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-011be62f-fcc9-45cd-ab45-726c921fe80e')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1330,12 +1348,12 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 
       <script>
         const buttonEl =
-          document.querySelector('#df-fcdab0d2-44b4-4ae5-8657-17da0348438d button.colab-df-convert');
+          document.querySelector('#df-011be62f-fcc9-45cd-ab45-726c921fe80e button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-fcdab0d2-44b4-4ae5-8657-17da0348438d');
+          const element = document.querySelector('#df-011be62f-fcc9-45cd-ab45-726c921fe80e');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1382,7 +1400,7 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a0f942bb-ca5f-4567-a63f-43298608c449">
+  <div id="df-155f0c0e-c1b7-4a66-896f-0e81054ebff8">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1490,7 +1508,7 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 </table>
 <p>150 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-a0f942bb-ca5f-4567-a63f-43298608c449')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-155f0c0e-c1b7-4a66-896f-0e81054ebff8')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1541,12 +1559,12 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 
       <script>
         const buttonEl =
-          document.querySelector('#df-a0f942bb-ca5f-4567-a63f-43298608c449 button.colab-df-convert');
+          document.querySelector('#df-155f0c0e-c1b7-4a66-896f-0e81054ebff8 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-a0f942bb-ca5f-4567-a63f-43298608c449');
+          const element = document.querySelector('#df-155f0c0e-c1b7-4a66-896f-0e81054ebff8');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1576,7 +1594,7 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-5e448c62-d8ba-4ac5-9c7b-b7cabf5cff90">
+  <div id="df-650e3ab0-adf8-4501-8126-de7b1b31b978">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1744,7 +1762,7 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 </table>
 <p>150 rows × 9 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-5e448c62-d8ba-4ac5-9c7b-b7cabf5cff90')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-650e3ab0-adf8-4501-8126-de7b1b31b978')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1795,12 +1813,12 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 
       <script>
         const buttonEl =
-          document.querySelector('#df-5e448c62-d8ba-4ac5-9c7b-b7cabf5cff90 button.colab-df-convert');
+          document.querySelector('#df-650e3ab0-adf8-4501-8126-de7b1b31b978 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-5e448c62-d8ba-4ac5-9c7b-b7cabf5cff90');
+          const element = document.querySelector('#df-650e3ab0-adf8-4501-8126-de7b1b31b978');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1835,7 +1853,7 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e46ea0d2-26b9-4b38-b45c-6bcd8146d542">
+  <div id="df-c5335376-6fb5-4865-b807-120f7f8ff255">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1919,7 +1937,7 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e46ea0d2-26b9-4b38-b45c-6bcd8146d542')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c5335376-6fb5-4865-b807-120f7f8ff255')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1970,12 +1988,12 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e46ea0d2-26b9-4b38-b45c-6bcd8146d542 button.colab-df-convert');
+          document.querySelector('#df-c5335376-6fb5-4865-b807-120f7f8ff255 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e46ea0d2-26b9-4b38-b45c-6bcd8146d542');
+          const element = document.querySelector('#df-c5335376-6fb5-4865-b807-120f7f8ff255');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2149,7 +2167,7 @@ Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Tugas 1</p>
+            <p class="prev-next-title">Statistika Deskriptif</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="Tugas3.html" title="next page">

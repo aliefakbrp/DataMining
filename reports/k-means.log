@@ -17,13 +17,30 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-asu = irisdata.drop(irisdata.head[].index,inplace=True)
+from sklearn.metrics import accuracy_score
+accuracy_score(y, labels,normalize=False)
 ------------------
 
-[0;36m  File [0;32m"<ipython-input-7-36965e534d0f>"[0;36m, line [0;32m1[0m
-[0;31m    asu = irisdata.drop(irisdata.head[].index,inplace=True)[0m
-[0m                                      ^[0m
-[0;31mSyntaxError[0m[0;31m:[0m invalid syntax
+[0;31m[0m
+[0;31mValueError[0mTraceback (most recent call last)
+[0;32m<ipython-input-13-5a97c5740712>[0m in [0;36m<module>[0;34m[0m
+[1;32m      1[0m [0;32mfrom[0m [0msklearn[0m[0;34m.[0m[0mmetrics[0m [0;32mimport[0m [0maccuracy_score[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 2[0;31m [0maccuracy_score[0m[0;34m([0m[0my[0m[0;34m,[0m [0mlabels[0m[0;34m,[0m[0mnormalize[0m[0;34m=[0m[0;32mFalse[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m
+[0;32m/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py[0m in [0;36maccuracy_score[0;34m(y_true, y_pred, normalize, sample_weight)[0m
+[1;32m    209[0m [0;34m[0m[0m
+[1;32m    210[0m     [0;31m# Compute accuracy for each possible representation[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 211[0;31m     [0my_type[0m[0;34m,[0m [0my_true[0m[0;34m,[0m [0my_pred[0m [0;34m=[0m [0m_check_targets[0m[0;34m([0m[0my_true[0m[0;34m,[0m [0my_pred[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    212[0m     [0mcheck_consistent_length[0m[0;34m([0m[0my_true[0m[0;34m,[0m [0my_pred[0m[0;34m,[0m [0msample_weight[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    213[0m     [0;32mif[0m [0my_type[0m[0;34m.[0m[0mstartswith[0m[0;34m([0m[0;34m"multilabel"[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
 
-SyntaxError: invalid syntax (<ipython-input-7-36965e534d0f>, line 1)
+[0;32m/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py[0m in [0;36m_check_targets[0;34m(y_true, y_pred)[0m
+[1;32m     93[0m         raise ValueError(
+[1;32m     94[0m             "Classification metrics can't handle a mix of {0} and {1} targets".format(
+[0;32m---> 95[0;31m                 [0mtype_true[0m[0;34m,[0m [0mtype_pred[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     96[0m             )
+[1;32m     97[0m         )
+
+[0;31mValueError[0m: Classification metrics can't handle a mix of unknown and multiclass targets
+ValueError: Classification metrics can't handle a mix of unknown and multiclass targets
 
