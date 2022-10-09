@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tugas 2 &#8212; Data Mining</title>
+    <title>Diskritisasi &#8212; Data Mining</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -128,7 +128,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Tugas 2
+   Diskritisasi
   </a>
  </li>
  <li class="toctree-l1">
@@ -143,12 +143,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="naivebayes.html">
-   Implementasi Naive Bayes  (Tugas 4)
+   Implementasi Naive Bayes
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="pohonkeputusan.html">
-   Decision Tree
+   Implementasi Decision Tree
   </a>
  </li>
 </ul>
@@ -439,7 +439,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Tugas 2</h1>
+                <h1>Diskritisasi</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -532,8 +532,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas-2">
-<h1>Tugas 2<a class="headerlink" href="#tugas-2" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="diskritisasi">
+<h1>Diskritisasi<a class="headerlink" href="#diskritisasi" title="Permalink to this headline">#</a></h1>
 <section id="apa-itu-deskritisasi">
 <h2>Apa itu Deskritisasi<a class="headerlink" href="#apa-itu-deskritisasi" title="Permalink to this headline">#</a></h2>
 <p align="justify">
@@ -653,22 +653,20 @@ k &amp;: jumlah \ partisi \ atribut \ A \\
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: scikit-learn in /usr/local/lib/python3.7/dist-packages (from sklearn) (1.0.2)
 Requirement already satisfied: numpy&gt;=1.14.6 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (1.21.6)
-Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (3.1.0)
 Requirement already satisfied: scipy&gt;=1.1.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (1.7.3)
 Requirement already satisfied: joblib&gt;=0.11 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (1.2.0)
+Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn-&gt;sklearn) (3.1.0)
 Building wheels for collected packages: sklearn
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for sklearn (setup.py) ... ?25l?25hdone
-  Created wheel for sklearn: filename=sklearn-0.0-py2.py3-none-any.whl size=1310 sha256=ed51e0a94e4e6f7ce2fe6fa7dd681ae553af01e6434afefb797d282ffc14a1ee
+  Created wheel for sklearn: filename=sklearn-0.0-py2.py3-none-any.whl size=1310 sha256=39cd740b2175df99fd57ca130cabc4bf3ce6634f95b15c310132c52e369d285c
   Stored in directory: /root/.cache/pip/wheels/46/ef/c3/157e41f5ee1372d1be90b09f74f82b10e391eaacca8f22d33e
 Successfully built sklearn
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: sklearn
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed sklearn-0.0
+Successfully installed sklearn-0.0
 </pre></div>
 </div>
 </div>
@@ -712,7 +710,7 @@ Successfully built sklearn
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-bf88df61-840f-4f2f-a844-29c925a86440">
+  <div id="df-5e68b9eb-26fb-45bb-9a44-d1cfc3c92f31">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -832,7 +830,7 @@ Successfully built sklearn
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-bf88df61-840f-4f2f-a844-29c925a86440')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5e68b9eb-26fb-45bb-9a44-d1cfc3c92f31')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -883,12 +881,12 @@ Successfully built sklearn
 
       <script>
         const buttonEl =
-          document.querySelector('#df-bf88df61-840f-4f2f-a844-29c925a86440 button.colab-df-convert');
+          document.querySelector('#df-5e68b9eb-26fb-45bb-9a44-d1cfc3c92f31 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-bf88df61-840f-4f2f-a844-29c925a86440');
+          const element = document.querySelector('#df-5e68b9eb-26fb-45bb-9a44-d1cfc3c92f31');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -944,7 +942,7 @@ Successfully built sklearn
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-cfb67d0b-af66-431e-b02d-81097eaf63e7">
+  <div id="df-6c16f96c-07b6-40ad-ba34-dc068145339f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1052,7 +1050,7 @@ Successfully built sklearn
 </table>
 <p>150 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-cfb67d0b-af66-431e-b02d-81097eaf63e7')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-6c16f96c-07b6-40ad-ba34-dc068145339f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1103,12 +1101,12 @@ Successfully built sklearn
 
       <script>
         const buttonEl =
-          document.querySelector('#df-cfb67d0b-af66-431e-b02d-81097eaf63e7 button.colab-df-convert');
+          document.querySelector('#df-6c16f96c-07b6-40ad-ba34-dc068145339f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-cfb67d0b-af66-431e-b02d-81097eaf63e7');
+          const element = document.querySelector('#df-6c16f96c-07b6-40ad-ba34-dc068145339f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1139,7 +1137,7 @@ Successfully built sklearn
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-011be62f-fcc9-45cd-ab45-726c921fe80e">
+  <div id="df-8d775fd6-799e-4ebf-9ab3-bed46e20ffe2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1307,7 +1305,7 @@ Successfully built sklearn
 </table>
 <p>150 rows × 9 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-011be62f-fcc9-45cd-ab45-726c921fe80e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8d775fd6-799e-4ebf-9ab3-bed46e20ffe2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1358,12 +1356,12 @@ Successfully built sklearn
 
       <script>
         const buttonEl =
-          document.querySelector('#df-011be62f-fcc9-45cd-ab45-726c921fe80e button.colab-df-convert');
+          document.querySelector('#df-8d775fd6-799e-4ebf-9ab3-bed46e20ffe2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-011be62f-fcc9-45cd-ab45-726c921fe80e');
+          const element = document.querySelector('#df-8d775fd6-799e-4ebf-9ab3-bed46e20ffe2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1410,7 +1408,7 @@ Successfully built sklearn
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-155f0c0e-c1b7-4a66-896f-0e81054ebff8">
+  <div id="df-9d74d1e3-4e8c-4f24-9179-33b315072daa">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1518,7 +1516,7 @@ Successfully built sklearn
 </table>
 <p>150 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-155f0c0e-c1b7-4a66-896f-0e81054ebff8')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9d74d1e3-4e8c-4f24-9179-33b315072daa')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1569,12 +1567,12 @@ Successfully built sklearn
 
       <script>
         const buttonEl =
-          document.querySelector('#df-155f0c0e-c1b7-4a66-896f-0e81054ebff8 button.colab-df-convert');
+          document.querySelector('#df-9d74d1e3-4e8c-4f24-9179-33b315072daa button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-155f0c0e-c1b7-4a66-896f-0e81054ebff8');
+          const element = document.querySelector('#df-9d74d1e3-4e8c-4f24-9179-33b315072daa');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1604,7 +1602,7 @@ Successfully built sklearn
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-650e3ab0-adf8-4501-8126-de7b1b31b978">
+  <div id="df-7e502659-561c-43b2-be99-ba8b3f6f1f20">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1772,7 +1770,7 @@ Successfully built sklearn
 </table>
 <p>150 rows × 9 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-650e3ab0-adf8-4501-8126-de7b1b31b978')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7e502659-561c-43b2-be99-ba8b3f6f1f20')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1823,12 +1821,12 @@ Successfully built sklearn
 
       <script>
         const buttonEl =
-          document.querySelector('#df-650e3ab0-adf8-4501-8126-de7b1b31b978 button.colab-df-convert');
+          document.querySelector('#df-7e502659-561c-43b2-be99-ba8b3f6f1f20 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-650e3ab0-adf8-4501-8126-de7b1b31b978');
+          const element = document.querySelector('#df-7e502659-561c-43b2-be99-ba8b3f6f1f20');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1863,7 +1861,7 @@ Successfully built sklearn
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c5335376-6fb5-4865-b807-120f7f8ff255">
+  <div id="df-b4bbebbc-5650-49a6-84fa-6e369d87b0ea">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1947,7 +1945,7 @@ Successfully built sklearn
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c5335376-6fb5-4865-b807-120f7f8ff255')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-b4bbebbc-5650-49a6-84fa-6e369d87b0ea')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1998,12 +1996,12 @@ Successfully built sklearn
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c5335376-6fb5-4865-b807-120f7f8ff255 button.colab-df-convert');
+          document.querySelector('#df-b4bbebbc-5650-49a6-84fa-6e369d87b0ea button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c5335376-6fb5-4865-b807-120f7f8ff255');
+          const element = document.querySelector('#df-b4bbebbc-5650-49a6-84fa-6e369d87b0ea');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
