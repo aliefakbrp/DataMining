@@ -125,7 +125,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas2.html">
-   Tugas 2
+   Diskritisasi
   </a>
  </li>
  <li class="toctree-l1">
@@ -332,12 +332,36 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#perhitungan-manual">
+   Perhitungan manual
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -349,6 +373,19 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#perhitungan-manual">
+   Perhitungan manual
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -358,6 +395,8 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="implementasi-decision-tree">
 <h1>Implementasi Decision Tree<a class="headerlink" href="#implementasi-decision-tree" title="Permalink to this headline">#</a></h1>
+<section id="perhitungan-manual">
+<h2><a class="reference external" href="https://docs.google.com/spreadsheets/d/1kIM6ojZr72adhIlwX1pnrLUKezVhN7aI/edit?usp=sharing&amp;ouid=105436869879116962522&amp;rtpof=true&amp;sd=true">Perhitungan manual</a><a class="headerlink" href="#perhitungan-manual" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -377,7 +416,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0d3341b9-1e72-4460-b5b3-e2d3615d1f4d">
+  <div id="df-a34d59b4-e7c7-4d84-b64f-f0f538e3d57a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -497,7 +536,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0d3341b9-1e72-4460-b5b3-e2d3615d1f4d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a34d59b4-e7c7-4d84-b64f-f0f538e3d57a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -548,12 +587,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0d3341b9-1e72-4460-b5b3-e2d3615d1f4d button.colab-df-convert');
+          document.querySelector('#df-a34d59b4-e7c7-4d84-b64f-f0f538e3d57a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0d3341b9-1e72-4460-b5b3-e2d3615d1f4d');
+          const element = document.querySelector('#df-a34d59b4-e7c7-4d84-b64f-f0f538e3d57a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -616,7 +655,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/pohonkeputusan_6_0.svg" src="_images/pohonkeputusan_6_0.svg" /></div>
+<img alt="_images/pohonkeputusan_7_0.svg" src="_images/pohonkeputusan_7_0.svg" /></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -646,7 +685,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-57cb752b-89ea-493f-a0ef-9ae455cf40c8">
+  <div id="df-6f77cfb2-cb03-4b2c-a25d-376ad94d8ff6">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -824,7 +863,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-57cb752b-89ea-493f-a0ef-9ae455cf40c8')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-6f77cfb2-cb03-4b2c-a25d-376ad94d8ff6')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -875,12 +914,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-57cb752b-89ea-493f-a0ef-9ae455cf40c8 button.colab-df-convert');
+          document.querySelector('#df-6f77cfb2-cb03-4b2c-a25d-376ad94d8ff6 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-57cb752b-89ea-493f-a0ef-9ae455cf40c8');
+          const element = document.querySelector('#df-6f77cfb2-cb03-4b2c-a25d-376ad94d8ff6');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -923,6 +962,7 @@ dari data prediksi 29 / 30 * 100% = 96.67%
 </div>
 </div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
