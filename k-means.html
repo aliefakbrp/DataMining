@@ -154,6 +154,11 @@ const thebe_selector_output = ".output, .cell_output"
    UTS
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Diabetes.html">
+   Diabetes
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -485,6 +490,19 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">irisdata</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f098933eed0&gt;
+</pre></div>
+</div>
+<img alt="_images/k-means_7_1.png" src="_images/k-means_7_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">irisdata</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 <span class="n">irisdata</span> <span class="o">=</span> <span class="n">irisdata</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
@@ -507,7 +525,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-99d0adc9-001e-4c15-b95b-4630eafc567e">
+  <div id="df-9a8c67eb-5a3e-4ec5-9b88-bde5352b8811">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -578,7 +596,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-99d0adc9-001e-4c15-b95b-4630eafc567e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9a8c67eb-5a3e-4ec5-9b88-bde5352b8811')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -629,12 +647,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-99d0adc9-001e-4c15-b95b-4630eafc567e button.colab-df-convert');
+          document.querySelector('#df-9a8c67eb-5a3e-4ec5-9b88-bde5352b8811 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-99d0adc9-001e-4c15-b95b-4630eafc567e');
+          const element = document.querySelector('#df-9a8c67eb-5a3e-4ec5-9b88-bde5352b8811');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -671,7 +689,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-02069414-9431-4333-ac2f-1ce20f80b8a0">
+  <div id="df-b3987bc5-b548-445f-98a4-118baa444c75">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -791,7 +809,7 @@ title="Print to PDF"
 </table>
 <p>149 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-02069414-9431-4333-ac2f-1ce20f80b8a0')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-b3987bc5-b548-445f-98a4-118baa444c75')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -842,12 +860,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-02069414-9431-4333-ac2f-1ce20f80b8a0 button.colab-df-convert');
+          document.querySelector('#df-b3987bc5-b548-445f-98a4-118baa444c75 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-02069414-9431-4333-ac2f-1ce20f80b8a0');
+          const element = document.querySelector('#df-b3987bc5-b548-445f-98a4-118baa444c75');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1219,7 +1237,7 @@ memory usage: 5.0 KB
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-e12b983e-ea80-4cfc-9cd0-7fff8e6daa4d">
+  <div id="df-be28b709-dfd9-4e4c-b4eb-6afcd81ba02c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1330,7 +1348,7 @@ memory usage: 5.0 KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e12b983e-ea80-4cfc-9cd0-7fff8e6daa4d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-be28b709-dfd9-4e4c-b4eb-6afcd81ba02c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1381,12 +1399,12 @@ memory usage: 5.0 KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e12b983e-ea80-4cfc-9cd0-7fff8e6daa4d button.colab-df-convert');
+          document.querySelector('#df-be28b709-dfd9-4e4c-b4eb-6afcd81ba02c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e12b983e-ea80-4cfc-9cd0-7fff8e6daa4d');
+          const element = document.querySelector('#df-be28b709-dfd9-4e4c-b4eb-6afcd81ba02c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1419,7 +1437,7 @@ memory usage: 5.0 KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f5a5bb18-3ebc-4ab2-9dc9-00a808ee3320">
+  <div id="df-475d4a6f-d3bd-421b-afc9-a3c1c0ca516f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1462,7 +1480,7 @@ memory usage: 5.0 KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f5a5bb18-3ebc-4ab2-9dc9-00a808ee3320')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-475d4a6f-d3bd-421b-afc9-a3c1c0ca516f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1513,12 +1531,12 @@ memory usage: 5.0 KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f5a5bb18-3ebc-4ab2-9dc9-00a808ee3320 button.colab-df-convert');
+          document.querySelector('#df-475d4a6f-d3bd-421b-afc9-a3c1c0ca516f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f5a5bb18-3ebc-4ab2-9dc9-00a808ee3320');
+          const element = document.querySelector('#df-475d4a6f-d3bd-421b-afc9-a3c1c0ca516f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1558,9 +1576,9 @@ memory usage: 5.0 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/k-means_29_0.png" src="_images/k-means_29_0.png" />
-<img alt="_images/k-means_29_1.png" src="_images/k-means_29_1.png" />
-<img alt="_images/k-means_29_2.png" src="_images/k-means_29_2.png" />
+<img alt="_images/k-means_30_0.png" src="_images/k-means_30_0.png" />
+<img alt="_images/k-means_30_1.png" src="_images/k-means_30_1.png" />
+<img alt="_images/k-means_30_2.png" src="_images/k-means_30_2.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1571,7 +1589,7 @@ memory usage: 5.0 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/k-means_30_0.png" src="_images/k-means_30_0.png" />
+<img alt="_images/k-means_31_0.png" src="_images/k-means_31_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1582,7 +1600,7 @@ memory usage: 5.0 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/k-means_31_0.png" src="_images/k-means_31_0.png" />
+<img alt="_images/k-means_32_0.png" src="_images/k-means_32_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1594,7 +1612,7 @@ memory usage: 5.0 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/k-means_32_0.png" src="_images/k-means_32_0.png" />
+<img alt="_images/k-means_33_0.png" src="_images/k-means_33_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1621,7 +1639,7 @@ memory usage: 5.0 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/k-means_34_0.png" src="_images/k-means_34_0.png" />
+<img alt="_images/k-means_35_0.png" src="_images/k-means_35_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1647,10 +1665,10 @@ memory usage: 5.0 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f8ebaa8ba10&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f09831aeb90&gt;
 </pre></div>
 </div>
-<img alt="_images/k-means_36_1.png" src="_images/k-means_36_1.png" />
+<img alt="_images/k-means_37_1.png" src="_images/k-means_37_1.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1668,7 +1686,7 @@ memory usage: 5.0 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/k-means_37_0.png" src="_images/k-means_37_0.png" />
+<img alt="_images/k-means_38_0.png" src="_images/k-means_38_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1688,13 +1706,13 @@ memory usage: 5.0 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-       0, 0, 0, 0, 0, 0, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2,
-       2, 2, 2, 1, 1, 2, 2, 2, 2, 1, 2, 1, 2, 1, 2, 2, 1, 1, 2, 2, 2, 2,
-       2, 1, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 1], dtype=int32)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 2, 2, 0, 2, 2, 2,
+       2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 2, 0, 2, 0, 2, 2, 0, 0, 2, 2, 2, 2,
+       2, 0, 2, 2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 0], dtype=int32)
 </pre></div>
 </div>
 </div>
@@ -1710,7 +1728,7 @@ memory usage: 5.0 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8933333333333333
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.24
 </pre></div>
 </div>
 </div>
