@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; Data Mining</title>
+    <title>LiniearRegresi &#8212; Data Mining</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -117,7 +117,7 @@ const thebe_selector_output = ".output, .cell_output"
   Statistika Deskritisasi
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
    Statistika Deskriptif
@@ -156,6 +156,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="Diabetes.html">
    Diabetes
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   LiniearRegresi
   </a>
  </li>
 </ul>
@@ -342,50 +347,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1><no title></h1>
+                <h1>LiniearRegresi</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -393,7 +371,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="cell docutils container">
+  <section class="tex2jax_ignore mathjax_ignore" id="liniearregresi">
+<h1>LiniearRegresi<a class="headerlink" href="#liniearregresi" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">make_regression</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span>
@@ -404,7 +384,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/linearregresi_0_0.png" src="_images/linearregresi_0_0.png" />
+<img alt="_images/linearregresi_1_0.png" src="_images/linearregresi_1_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -414,7 +394,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.67208957])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.0939308])
 </pre></div>
 </div>
 </div>
@@ -433,7 +413,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.15810834534115026
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.34500533766568076
 </pre></div>
 </div>
 </div>
@@ -449,7 +429,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f1796f98-81cf-4186-b81b-bf11ab585395">
+  <div id="df-fd9ef050-aa98-4be2-b3e6-c882f1a26bee">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -476,28 +456,28 @@ title="Print to PDF"
   <tbody>
     <tr>
       <th>0</th>
-      <td>[0.6720895749762595]</td>
-      <td>19.927363</td>
+      <td>[0.0939308019586876]</td>
+      <td>5.848239</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>[0.1933764047159905]</td>
-      <td>4.235185</td>
+      <td>[-0.01398256585678675]</td>
+      <td>-0.275903</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>[1.4887618736633603]</td>
-      <td>41.156283</td>
+      <td>[0.7187859326176896]</td>
+      <td>29.169679</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>[0.9161591685526538]</td>
-      <td>23.133247</td>
+      <td>[-1.4490624780356656]</td>
+      <td>-59.233655</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>[0.10518633233934781]</td>
-      <td>1.423510</td>
+      <td>[-0.04721886788613548]</td>
+      <td>-1.285169</td>
     </tr>
     <tr>
       <th>...</th>
@@ -506,34 +486,34 @@ title="Print to PDF"
     </tr>
     <tr>
       <th>95</th>
-      <td>[0.6644185779781407]</td>
-      <td>15.563967</td>
+      <td>[-1.7921848764534267]</td>
+      <td>-75.019100</td>
     </tr>
     <tr>
       <th>96</th>
-      <td>[-0.23785095648419258]</td>
-      <td>-9.401299</td>
+      <td>[-0.7322456451913056]</td>
+      <td>-29.088436</td>
     </tr>
     <tr>
       <th>97</th>
-      <td>[-0.6827792807718412]</td>
-      <td>-20.975695</td>
+      <td>[-0.9680909536623965]</td>
+      <td>-39.541888</td>
     </tr>
     <tr>
       <th>98</th>
-      <td>[-0.03357860524098808]</td>
-      <td>-3.099573</td>
+      <td>[0.14089928046450736]</td>
+      <td>4.618089</td>
     </tr>
     <tr>
       <th>99</th>
-      <td>[0.4810484026706468]</td>
-      <td>11.048018</td>
+      <td>[-0.1506713037760387]</td>
+      <td>-8.612856</td>
     </tr>
   </tbody>
 </table>
 <p>100 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f1796f98-81cf-4186-b81b-bf11ab585395')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-fd9ef050-aa98-4be2-b3e6-c882f1a26bee')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -584,12 +564,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f1796f98-81cf-4186-b81b-bf11ab585395 button.colab-df-convert');
+          document.querySelector('#df-fd9ef050-aa98-4be2-b3e6-c882f1a26bee button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f1796f98-81cf-4186-b81b-bf11ab585395');
+          const element = document.querySelector('#df-fd9ef050-aa98-4be2-b3e6-c882f1a26bee');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -610,6 +590,7 @@ title="Print to PDF"
   </div>
 </div></div>
 </div>
+</section>
 
     <script type="text/x-thebe-config">
     {
