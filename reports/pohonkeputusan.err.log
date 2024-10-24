@@ -1,0 +1,50 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 1314, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/usr/local/lib/python3.10/dist-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import graphviz 
+dot_data =export_graphviz(d3, out_file=None, feature_names=df.columns[:-1], class_names=df.columns[-1],  filled=True, rounded=True,  special_characters=True) 
+graph = graphviz.Source(dot_data) 
+# graph.render("iris") 
+graph
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mInvalidParameterError[0m                     Traceback (most recent call last)
+[0;32m<ipython-input-6-aa22f7c0bb5f>[0m in [0;36m<cell line: 2>[0;34m()[0m
+[1;32m      1[0m [0;32mimport[0m [0mgraphviz[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 2[0;31m [0mdot_data[0m [0;34m=[0m[0mexport_graphviz[0m[0;34m([0m[0md3[0m[0;34m,[0m [0mout_file[0m[0;34m=[0m[0;32mNone[0m[0;34m,[0m [0mfeature_names[0m[0;34m=[0m[0mdf[0m[0;34m.[0m[0mcolumns[0m[0;34m[[0m[0;34m:[0m[0;34m-[0m[0;36m1[0m[0;34m][0m[0;34m,[0m [0mclass_names[0m[0;34m=[0m[0mdf[0m[0;34m.[0m[0mcolumns[0m[0;34m[[0m[0;34m-[0m[0;36m1[0m[0;34m][0m[0;34m,[0m  [0mfilled[0m[0;34m=[0m[0;32mTrue[0m[0;34m,[0m [0mrounded[0m[0;34m=[0m[0;32mTrue[0m[0;34m,[0m  [0mspecial_characters[0m[0;34m=[0m[0;32mTrue[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      3[0m [0mgraph[0m [0;34m=[0m [0mgraphviz[0m[0;34m.[0m[0mSource[0m[0;34m([0m[0mdot_data[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      4[0m [0;31m# graph.render("iris")[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m [0mgraph[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.10/dist-packages/sklearn/utils/_param_validation.py[0m in [0;36mwrapper[0;34m(*args, **kwargs)[0m
+[1;32m    201[0m             [0mparams[0m [0;34m=[0m [0;34m{[0m[0mk[0m[0;34m:[0m [0mv[0m [0;32mfor[0m [0mk[0m[0;34m,[0m [0mv[0m [0;32min[0m [0mparams[0m[0;34m.[0m[0marguments[0m[0;34m.[0m[0mitems[0m[0;34m([0m[0;34m)[0m [0;32mif[0m [0mk[0m [0;32mnot[0m [0;32min[0m [0mto_ignore[0m[0;34m}[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    202[0m [0;34m[0m[0m
+[0;32m--> 203[0;31m             validate_parameter_constraints(
+[0m[1;32m    204[0m                 [0mparameter_constraints[0m[0;34m,[0m [0mparams[0m[0;34m,[0m [0mcaller_name[0m[0;34m=[0m[0mfunc[0m[0;34m.[0m[0m__qualname__[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    205[0m             )
+
+[0;32m/usr/local/lib/python3.10/dist-packages/sklearn/utils/_param_validation.py[0m in [0;36mvalidate_parameter_constraints[0;34m(parameter_constraints, params, caller_name)[0m
+[1;32m     93[0m                 )
+[1;32m     94[0m [0;34m[0m[0m
+[0;32m---> 95[0;31m             raise InvalidParameterError(
+[0m[1;32m     96[0m                 [0;34mf"The {param_name!r} parameter of {caller_name} must be"[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     97[0m                 [0;34mf" {constraints_str}. Got {param_val!r} instead."[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mInvalidParameterError[0m: The 'class_names' parameter of export_graphviz must be an array-like, an instance of 'bool' or an instance of 'numpy.bool_' or None. Got 'variety' instead.
+
